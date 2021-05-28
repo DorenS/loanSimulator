@@ -4,6 +4,7 @@ public class Loan
 {
 	public Loan()
 	{
+        double startVal;
         double principal;
         double intrestRate;
         double totInterestAccrued;
@@ -17,6 +18,7 @@ public class Loan
 
         Public loan()
         {
+            startVal = 0;
             principal = 0;
             intrestRate = .01;
             totInterestAccrued = 0;
@@ -25,6 +27,7 @@ public class Loan
 
         Public loan(double amt, double rte/*, latefee, dateTaken, payDate*/)
         {
+            startVal = amt;
             principal = amt;
             intrestRate = rte;
             totInterestAccrued = 0;
@@ -40,6 +43,22 @@ public class Loan
 
     }
 
+    public String toSTring()
+    {
+        String str = "Loan starting value: " + startVal + "\n" +
+            "Loan interest rate: " + interestRate + "\n" +
+            "Loan current value: " + principal + "\n" +
+            "amount paid towards loan: " + (startVal - principal + totInterestAccrued);
+    }
+
+    /*
+    public String toSTringDetailed()
+    {
+        String str = "Loan starting value: $" + startVal + "\n" +
+            "Loan current value: $" + principal + "\n" +
+            "amount paid towards loan: $" + (startVal - principal + totInterestAccrued);
+    }
+    */
     /*
      loans(s): MUST hold an amount owed.
                 other features: 

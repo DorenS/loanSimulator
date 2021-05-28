@@ -41,7 +41,7 @@ namespace ConsoleApp1
                 vs list, more mobility, loans dont interact, no need to use one to get to another
                 vs tree, ^
 
-            user () >> user to string ives user name, iterates through loan array toprint each loans val and calc total owed.
+            user () >> user to string gives user name, iterates through loan array toprint each loans val and calc total owed.
 
             ability to calculate days between curr day and last payment/when loan was taken
                 need date comparator ^
